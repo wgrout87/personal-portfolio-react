@@ -39,7 +39,7 @@ main {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -161,13 +161,15 @@ a {
     margin: 0.625rem 0 0.25rem;
 }
 
-.form-input {
+.form-input,
+.form-textarea {
     width: 100%;
     padding: 0.75rem;
     margin: 0.2rem 0;
     font-size: 1.2rem;
     border: 2px solid var(--dark);
     border-radius: var(--border-radius);
+    resize: none;
 }
 
 [type='radio']:checked,
