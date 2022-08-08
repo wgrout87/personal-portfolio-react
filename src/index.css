@@ -18,6 +18,12 @@
     box-sizing: border-box;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 html,
 body {
     min-height: 100%;
@@ -46,15 +52,14 @@ body {
     background-image: url('../public/assets/images/pixel-me.png');
 }
 
+#avatar {
+    max-width: 100%;
+    height: auto;
+}
+
 .bg {
     background-size: cover;
     transition: 1s;
-}
-
-#root {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 .night {
@@ -83,6 +88,14 @@ footer {
     background-image: url('../public/assets/images/speech-bubble.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+h2.speech-bubble-text {
+    font-size: 4vw;
+}
+
+p.speech-bubble-text {
+    font-size: 3vw;
 }
 
 svg {
@@ -1037,6 +1050,10 @@ input:checked+.slider:before {
 
 /* col-sm */
 @media screen and (min-width: 640px) {
+    .p-sm-3 {
+        padding: var(--spacing-three);
+    }
+
     .col-sm-auto {
         flex-grow: 1;
         flex-basis: 0;
@@ -1125,6 +1142,14 @@ input:checked+.slider:before {
 
 /* col-md */
 @media screen and (min-width: 768px) {
+    h2.speech-bubble-text {
+        font-size: 3vw;
+    }
+
+    p.speech-bubble-text {
+        font-size: 2vw;
+    }
+
     .col-md-auto {
         flex-grow: 1;
         flex-basis: 0;
@@ -1213,6 +1238,15 @@ input:checked+.slider:before {
 
 /* col-lg */
 @media screen and (min-width: 992px) {
+
+    h2.speech-bubble-text {
+        font-size: 2vw;
+    }
+
+    p.speech-bubble-text {
+        font-size: 1.5vw;
+    }
+
     nav {
         width: auto;
         justify-content: flex-end;

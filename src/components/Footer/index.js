@@ -2,9 +2,16 @@ import React from "react";
 import { FaLinkedin, FaGithub, FaStackOverflow, FaEnvelope } from 'react-icons/fa';
 
 function Footer() {
+    function toggleNightMode(e) {
+        document.body.classList.toggle('night');
+        document.getElementById('clouds').classList.toggle('night-clouds');
+        document.getElementById('hills').classList.toggle('night-hills');
+    };
+
     return (
-        <footer className="bg-primary py-2 flex-row align-center">
-            <div className="container flex-row justify-center align-center">
+        <footer className="bg-primary py-2 flex-row justify-space-between px-5">
+            {/* <div></div> */}
+            <div className="flex-row justify-center align-center">
                 <a href="https://github.com/wgrout87" target="_blank" rel="noreferrer" className="tooltip">
                     <FaGithub />
                     <span className="tooltiptext">GitHub</span>
@@ -21,6 +28,13 @@ function Footer() {
                     <FaEnvelope />
                     <span className="tooltiptext">Email</span>
                 </a>
+            </div>
+            <div>
+                <label htmlFor="toggleNightMode" className="ml-3">Night Mode:</label>
+                <label className="switch">
+                    <input type="checkbox" name="toggleNightMode" id="toggleNightMode" onChange={toggleNightMode} />
+                    <span className="slider round"></span>
+                </label>
             </div>
         </footer>
     )
