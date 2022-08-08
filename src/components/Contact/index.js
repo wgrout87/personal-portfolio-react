@@ -1,7 +1,11 @@
-import React, { useRef } from "react";
+import React, { useEffect } from "react";
 import emailjs from "emailjs-com";
 
 function Contact() {
+    useEffect(() => {
+        document.body.style.backgroundPosition = '0% 20%';
+    });
+
     function sendEmail(e) {
         e.preventDefault();
 
