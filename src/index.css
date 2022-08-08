@@ -1,6 +1,6 @@
 :root {
-    --primary: #497573;
-    --secondary: #007771;
+    --primary: #151e5c;
+    --secondary: #120c3c;
     --tertiary: #b2c2c1;
     --quatrinary: #cadbda;
     --light: #e1f5f4;
@@ -34,6 +34,10 @@ body {
     background-image: url('../public/assets/images/clouds-day.png');
     background-size: cover;
     transition: 1s;
+}
+
+.night {
+    background-image: url('../public/assets/images/clouds-night.png');
 }
 
 main {
@@ -115,14 +119,14 @@ a {
     border: none;
     color: var(--light);
     outline: none;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     transition: all 0.5s;
 }
 
 .btn:hover,
 .pill:hover,
 .navActive {
-    color: var(--secondary);
+    color: var(--primary);
     background-color: var(--light);
 }
 
@@ -229,6 +233,65 @@ a {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--light);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--light);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--secondary);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--secondary);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 /* LAYOUT */
@@ -905,7 +968,7 @@ a {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 166px;
-    background-color: var(--primary);
+    background-color: var(--secondary);
     color: var(--light);
     text-align: center;
     padding: 5px 0;

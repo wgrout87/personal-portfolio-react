@@ -20,7 +20,7 @@ function Contact() {
     return (
         <div className="container flex-row text-light">
             <div className="col-12 col-xl-6" />
-            <div className="col-12 col-xl-6 mt-5 p-3" style={{ backgroundColor: "#007771" }}>
+            <div className="col-12 col-xl-6 mt-5 p-3 bg-primary">
                 <h2>Contact Me</h2>
                 <form className="flex-row" onSubmit={sendEmail} method="POST">
                     <label htmlFor="name">Name</label>

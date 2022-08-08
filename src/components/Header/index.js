@@ -6,8 +6,15 @@ function Header(props) {
         setCurrentCategory
     } = props;
 
+    function toggleNightMode(e) {
+        e.target.checked ?
+            document.body.classList.add('night')
+            :
+            document.body.classList.remove('night');
+    };
+
     return (
-        <header className="bg-secondary mb-4 py-2 flex-row align-center">
+        <header className="bg-primary mb-4 py-2 flex-row align-center">
             <div className="container mx-3 flex-row justify-space-between-lg justify-center align-center">
                 <h1>William Grout</h1>
 
@@ -19,6 +26,11 @@ function Header(props) {
                     <button className={`btn pill ${currentCategory === 'resume' && 'navActive'}`} onClick={() => setCurrentCategory('resume')}>Resume</button>
                 </nav>
             </div>
+            <label htmlFor="toggleNightMode" className="ml-3">Night Mode:</label>
+            <label className="switch">
+                <input type="checkbox" name="toggleNightMode" id="toggleNightMode" onChange={toggleNightMode} />
+                <span className="slider round"></span>
+            </label>
         </header>
     )
 }

@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub, FaStackOverflow, FaEnvelope } from 'react-icons/f
 
 function Footer() {
     return (
-        <footer className="bg-secondary py-2 flex-row align-center">
+        <footer className="bg-primary py-2 flex-row align-center">
             <div className="container flex-row justify-center align-center">
                 <a href="https://github.com/wgrout87" target="_blank" rel="noreferrer" className="tooltip">
                     <FaGithub />
