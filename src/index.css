@@ -4,7 +4,7 @@
     --tertiary: #b2c2c1;
     --quatrinary: #cadbda;
     --light: #e1f5f4;
-    --dark: #6c7575;
+    --dark: #353535;
     --error: rgb(228, 46, 1);
     --border-radius: 0.3rem;
     --spacing-one: calc(1rem * 0.25);
@@ -31,13 +31,42 @@ body {
     line-height: 1.5;
     font-size: 20px;
     color: var(--light);
+    background-image: url('../public/assets/images/sky-day.png');
+}
+
+.clouds {
     background-image: url('../public/assets/images/clouds-day.png');
+}
+
+.hills {
+    background-image: url('../public/assets/images/hills-day.png');
+}
+
+.me {
+    background-image: url('../public/assets/images/pixel-me.png');
+}
+
+.bg {
     background-size: cover;
     transition: 1s;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .night {
+    background-image: url('../public/assets/images/sky-night.png');
+}
+
+.night-clouds {
     background-image: url('../public/assets/images/clouds-night.png');
+}
+
+.night-hills {
+    background-image: url('../public/assets/images/hills-night.png');
 }
 
 main {
@@ -45,9 +74,15 @@ main {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    margin-top: auto;
+}
+
+.speech-bubble {
+    /* height: 300px; */
+    background-image: url('../public/assets/images/speech-bubble.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 svg {
@@ -299,10 +334,6 @@ input:checked+.slider:before {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.container-fluid {
-    width: 92%;
 }
 
 /* DISPLAY */

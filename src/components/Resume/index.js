@@ -3,7 +3,11 @@ import React, { useEffect } from "react";
 function Resume() {
     useEffect(() => {
         document.body.style.backgroundPosition = '0% 30%';
-    });
+        document.getElementById('clouds').style.backgroundPosition = '0% 45%';
+        document.getElementById('hills').style.backgroundPosition = '0% 60%';
+        document.getElementById('me').style.backgroundPosition = '0% 85%';
+        document.getElementById('me').classList.add("me");
+    }, []);
 
     return (
         <div>

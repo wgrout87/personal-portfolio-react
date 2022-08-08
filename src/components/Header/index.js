@@ -7,10 +7,9 @@ function Header(props) {
     } = props;
 
     function toggleNightMode(e) {
-        e.target.checked ?
-            document.body.classList.add('night')
-            :
-            document.body.classList.remove('night');
+        document.body.classList.toggle('night');
+        document.getElementById('clouds').classList.toggle('night-clouds');
+        document.getElementById('hills').classList.toggle('night-hills');
     };
 
     return (

@@ -4,7 +4,11 @@ import emailjs from "emailjs-com";
 function Contact() {
     useEffect(() => {
         document.body.style.backgroundPosition = '0% 20%';
-    });
+        document.getElementById('clouds').style.backgroundPosition = '0% 30%';
+        document.getElementById('hills').style.backgroundPosition = '0% 40%';
+        document.getElementById('me').style.backgroundPosition = '0% 0%';
+        document.getElementById('me').classList.remove("me");
+    }, []);
 
     function sendEmail(e) {
         e.preventDefault();
@@ -19,8 +23,8 @@ function Contact() {
 
     return (
         <div className="container flex-row text-light">
-            <div className="col-12 col-xl-6" />
-            <div className="col-12 col-xl-6 mt-5 p-3 bg-primary">
+            <div className="col-sm-12 col-xl-6" />
+            <div className="col-sm-12 col-xl-6 my-5 p-3 bg-primary">
                 <h2>Contact Me</h2>
                 <form className="flex-row" onSubmit={sendEmail} method="POST">
                     <label htmlFor="name">Name</label>
