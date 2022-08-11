@@ -111,6 +111,29 @@ p.about-me {
     font-size: 2vw;
 }
 
+#portfolio img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+#portfolio article {
+    position: relative;
+}
+
+#portfolio label {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: var(--primary);
+    opacity: 0.8;
+    font-size: 2.5vw;
+}
+
 svg {
     font-size: 40px;
     margin: 0px 30px 0px 30px;
@@ -1167,6 +1190,10 @@ input:checked+.slider:before {
         font-size: 2vw;
     }
 
+    #portfolio label {
+        font-size: 1.5vw;
+    }
+
     .col-md-auto {
         flex-grow: 1;
         flex-basis: 0;
@@ -1262,6 +1289,10 @@ input:checked+.slider:before {
 
     p.speech-bubble-text {
         font-size: 1.5vw;
+    }
+
+    #portfolio label {
+        font-size: 1vw;
     }
 
     p.about-me {
