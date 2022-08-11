@@ -57,9 +57,13 @@ body {
     height: auto;
 }
 
+.transition {
+    transition: 1s;
+}
+
 .bg {
     background-size: cover;
-    transition: 1s;
+    background-repeat: no-repeat;
 }
 
 .night {
@@ -78,9 +82,14 @@ main {
     color: var(--dark);
 }
 
+header {
+    z-index: 999;
+}
+
 footer {
     width: 100%;
     margin-top: auto;
+    z-index: 999;
 }
 
 .speech-bubble {
@@ -96,6 +105,10 @@ h2.speech-bubble-text {
 
 p.speech-bubble-text {
     font-size: 3vw;
+}
+
+p.about-me {
+    font-size: 2vw;
 }
 
 svg {
@@ -340,6 +353,10 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.rounded-corners {
+    border-radius: var(--border-radius);
 }
 
 /* LAYOUT */
@@ -1245,6 +1262,10 @@ input:checked+.slider:before {
 
     p.speech-bubble-text {
         font-size: 1.5vw;
+    }
+
+    p.about-me {
+        font-size: 1vw;
     }
 
     nav {
