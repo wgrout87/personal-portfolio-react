@@ -49,7 +49,7 @@ body {
 }
 
 .me {
-    background-image: url('../public/assets/images/pixel-me.png');
+    background-image: url('../public/assets/images/pixel-me-day.png');
 }
 
 #avatar {
@@ -76,6 +76,10 @@ body {
 
 .night-hills {
     background-image: url('../public/assets/images/hills-night.png');
+}
+
+.night-me {
+    background-image: url('../public/assets/images/pixel-me-night.png');
 }
 
 main {
@@ -137,6 +141,13 @@ p.about-me {
 svg {
     font-size: 40px;
     margin: 0px 30px 0px 30px;
+}
+
+.react-pdf__Page__canvas {
+    width: 80% !important;
+    height: 100% !important;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 h1,
@@ -245,6 +256,7 @@ a {
 .form-input,
 .form-textarea {
     display: block;
+    font-family: 'Press Start 2P';
 }
 
 .form-label {

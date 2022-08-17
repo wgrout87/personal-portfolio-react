@@ -6,11 +6,11 @@ function Footer() {
         document.body.classList.toggle('night');
         document.getElementById('clouds').classList.toggle('night-clouds');
         document.getElementById('hills').classList.toggle('night-hills');
+        document.getElementById('me').classList.toggle('night-me');
     };
 
     return (
         <footer className="bg-primary py-2 flex-row justify-space-between px-5">
-            {/* <div></div> */}
             <div className="flex-row justify-center align-center">
                 <a href="https://github.com/wgrout87" target="_blank" rel="noreferrer" className="tooltip">
                     <FaGithub />
