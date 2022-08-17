@@ -143,11 +143,11 @@ svg {
     margin: 0px 30px 0px 30px;
 }
 
-.react-pdf__Page__canvas {
-    width: 80% !important;
-    height: 100% !important;
-    margin-right: auto;
-    margin-left: auto;
+iframe {
+    height: 70vh;
+    border: none;
+    outline: none;
+    display: block;
 }
 
 h1,
