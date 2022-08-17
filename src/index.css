@@ -37,19 +37,19 @@ body {
     line-height: 1.5;
     font-size: 20px;
     color: var(--light);
-    background-image: url('../public/assets/images/sky-day.png');
+    background-image: url('../public/assets/images/sky-day-mobile.png');
 }
 
 .clouds {
-    background-image: url('../public/assets/images/clouds-day.png');
+    background-image: url('../public/assets/images/clouds-day-mobile.png');
 }
 
 .hills {
-    background-image: url('../public/assets/images/hills-day.png');
+    background-image: url('../public/assets/images/hills-day-mobile.png');
 }
 
 .me {
-    background-image: url('../public/assets/images/pixel-me-day.png');
+    background-image: url('../public/assets/images/pixel-me-day-mobile.png');
 }
 
 #avatar {
@@ -64,22 +64,23 @@ body {
 .bg {
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .night {
-    background-image: url('../public/assets/images/sky-night.png');
+    background-image: url('../public/assets/images/sky-night-mobile.png');
 }
 
 .night-clouds {
-    background-image: url('../public/assets/images/clouds-night.png');
+    background-image: url('../public/assets/images/clouds-night-mobile.png');
 }
 
 .night-hills {
-    background-image: url('../public/assets/images/hills-night.png');
+    background-image: url('../public/assets/images/hills-night-mobile.png');
 }
 
 .night-me {
-    background-image: url('../public/assets/images/pixel-me-night.png');
+    background-image: url('../public/assets/images/pixel-me-night-mobile.png');
 }
 
 main {
@@ -148,6 +149,7 @@ iframe {
     border: none;
     outline: none;
     display: block;
+    background-color: white;
 }
 
 h1,
@@ -1100,8 +1102,83 @@ input:checked+.slider:before {
     opacity: 1;
 }
 
+@media screen and (min-width: 395px) {
+    body {
+        background-image: url('../public/assets/images/sky-day-medium.png');
+    }
+
+    .clouds {
+        background-image: url('../public/assets/images/clouds-day-medium.png');
+    }
+
+    .hills {
+        background-image: url('../public/assets/images/hills-day-medium.png');
+    }
+
+    .me {
+        background-image: url('../public/assets/images/pixel-me-day-medium.png');
+    }
+
+    .night {
+        background-image: url('../public/assets/images/sky-night-medium.png');
+    }
+
+    .night-clouds {
+        background-image: url('../public/assets/images/clouds-night-medium.png');
+    }
+
+    .night-hills {
+        background-image: url('../public/assets/images/hills-night-medium.png');
+    }
+
+    .night-me {
+        background-image: url('../public/assets/images/pixel-me-night-medium.png');
+    }
+
+    .bg {
+        background-attachment: scroll;
+    }
+}
+
 /* col-sm */
 @media screen and (min-width: 640px) {
+    body {
+        background-image: url('../public/assets/images/sky-day.png');
+    }
+
+    .clouds {
+        background-image: url('../public/assets/images/clouds-day.png');
+    }
+
+    .hills {
+        background-image: url('../public/assets/images/hills-day.png');
+    }
+
+    .me {
+        background-image: url('../public/assets/images/pixel-me-day.png');
+    }
+
+    .night {
+        background-image: url('../public/assets/images/sky-night.png');
+    }
+
+    .night-clouds {
+        background-image: url('../public/assets/images/clouds-night.png');
+    }
+
+    .night-hills {
+        background-image: url('../public/assets/images/hills-night.png');
+    }
+
+    .night-me {
+        background-image: url('../public/assets/images/pixel-me-night.png');
+    }
+
+    .bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .p-sm-3 {
         padding: var(--spacing-three);
     }

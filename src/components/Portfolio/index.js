@@ -2,10 +2,17 @@ import React, { useEffect } from "react";
 
 function Portfolio() {
     useEffect(() => {
+        if (window.innerWidth <= 650) {
+            document.body.style.backgroundPosition = '0% 16.67%';
+            document.getElementById('clouds').style.backgroundPosition = '0% 25%';
+            document.getElementById('hills').style.backgroundPosition = '0% 33.33%';
+            document.getElementById('me').style.backgroundPosition = '0% 100vh';
+            return;
+        }
         document.body.style.backgroundPosition = '0% 10%';
         document.getElementById('clouds').style.backgroundPosition = '0% 15%';
         document.getElementById('hills').style.backgroundPosition = '0% 20%';
-        document.getElementById('me').style.backgroundPosition = '0% -50%';
+        document.getElementById('me').style.backgroundPosition = '0% 100vh';
     }, []);
 
     return (

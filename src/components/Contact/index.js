@@ -8,10 +8,17 @@ function Contact() {
     const [resultState, setResultState] = useState('-100vh');
 
     useEffect(() => {
+        if (window.innerWidth <= 650) {
+            document.body.style.backgroundPosition = '0% 33.33%';
+            document.getElementById('clouds').style.backgroundPosition = '0% 50%';
+            document.getElementById('hills').style.backgroundPosition = '0% 66%';
+            document.getElementById('me').style.backgroundPosition = '0% 100vh';
+            return;
+        }
         document.body.style.backgroundPosition = '0% 20%';
         document.getElementById('clouds').style.backgroundPosition = '0% 30%';
         document.getElementById('hills').style.backgroundPosition = '0% 40%';
-        document.getElementById('me').style.backgroundPosition = '0% -50%';
+        document.getElementById('me').style.backgroundPosition = '0% 100vh';
     }, []);
 
     function sendEmail(e) {

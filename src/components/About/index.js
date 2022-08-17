@@ -5,7 +5,7 @@ function About() {
         document.body.style.backgroundPosition = '0% 0%';
         document.getElementById('clouds').style.backgroundPosition = '0% 0%';
         document.getElementById('hills').style.backgroundPosition = '0% 0%';
-        document.getElementById('me').style.backgroundPosition = '0% -50%';
+        document.getElementById('me').style.backgroundPosition = '0% 100vh';
     }, []);
 
     return (
