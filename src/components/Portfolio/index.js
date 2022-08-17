@@ -40,7 +40,7 @@ function Portfolio() {
                         </a>
                     </article>
                 </div>
-                <div className="col-3 col-md-6 m-auto p-3">
+                <div className="col-12 col-md-6 p-3">
                     <article className="bg-primary p-3 m-3 rounded-corners">
                         <a href="https://herooutline.herokuapp.com/" target="_blank" rel="noreferrer">
                             <img src="./assets/images/herooutline.herokuapp.com_.png" alt="A Hero's Outline website preview" id="herosOutline" />

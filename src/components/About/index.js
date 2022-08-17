@@ -17,7 +17,7 @@ function About() {
                 <h2 className="speech-bubble-text text-center">Hi, I'm William Grout!</h2>
                 <p className="speech-bubble-text text-center">I'm a Full Stack Web Developer</p>
             </div>
-            <div className="col-11 col-md-11 col-lg-6 p-3 bg-primary mx-auto rounded-corners">
+            <div className="col-11 col-md-11 col-lg-6 p-3 bg-primary mx-auto rounded-corners mb-4">
                 <h2 className="speech-bubble-text bg-light rounded-corners p-2 mb-3">About Me:</h2>
                 <p className="speech-bubble-text about-me bg-light rounded-corners p-2 mb-0 mt-2">
                     My name is Will, and I used to make pizzas on a food truck. I enjoyed pursuing a passion for cooking, but with a shifting economy and a global pandemic shutting many businesses down, I desided to turn my sights elsewhere. I found a passion for coding while taking a 24 week bootcamp, and I hope to be able to continue to develop my coding skills throughout a long career as a web developer.
