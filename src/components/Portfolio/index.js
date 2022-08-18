@@ -29,11 +29,11 @@ function Portfolio() {
                         </a>
                     </article>
                     <article className="bg-primary p-3 m-3 rounded-corners">
-                        <a href="https://github.com/wgrout87/Employee-Tracker" target="_blank" rel="noreferrer">
-                            <img src="./assets/images/github.com_wgrout87_Employee-Tracker.png" alt="Employee-Tracker github preview" id="employeeTracker" />
-                            <label for="employeeTracker" className="rounded-corners dynamic-text">
-                                Employee Tracker<br />
-                                <span>Javascript, Node.js, MYSQL, MYSQL2</span>
+                        <a href="https://worldwidejerky.herokuapp.com/" target="_blank" rel="noreferrer">
+                            <img src="./assets/images/worldwidejerky.herokuapp.com_.png" alt="World Wide Jerky website preview" id="worldWideJerky" />
+                            <label for="worldWideJerky" className="rounded-corners dynamic-text">
+                                World Wide Jerky<br />
+                                <span>MERN Stack, Apollo, GraphQL</span>
                             </label>
                         </a>
                     </article>
