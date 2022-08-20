@@ -23,7 +23,7 @@ function About() {
                     My name is William Grout. I've been a professional pizza cook for seven years with Fiore Pizza, but am currently transitioning into full stack web development. As I rose to leadership positions at Fiore, I was entrusted with teaching new employees the skills they needed to not only succeed but thrive in their roles.
                     <br />
                     <br />
-                    Recently, I am a graduate of the University of Utah's Coding Bootcamp, where I have gained both front and backend web development skills. I've recently gained the hard skills necessary to enter the workplace as a full stack developer, but I've been cultivating the soft skills necessary to integrate into a team for years.
+                    I am a recent graduate of the University of Utah's Coding Bootcamp, where I have gained both front and backend web development skills. I've recently gained the hard skills necessary to enter the workplace as a full stack developer, but I've been cultivating the soft skills necessary to integrate into a team for years.
                 </p>
             </div>
         </div>
