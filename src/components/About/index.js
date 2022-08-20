@@ -20,10 +20,10 @@ function About() {
             <div className="col-11 col-md-11 col-lg-6 p-3 bg-primary mx-auto rounded-corners mb-4">
                 <h2 className="speech-bubble-text bg-light rounded-corners p-2 mb-3">About Me:</h2>
                 <p className="speech-bubble-text about-me bg-light rounded-corners p-2 mb-0 mt-2">
-                    My name is Will, and I used to make pizzas on a food truck. I enjoyed pursuing a passion for cooking, but with a shifting economy and a global pandemic shutting many businesses down, I desided to turn my sights elsewhere. I found a passion for coding while taking a 24 week bootcamp, and I hope to be able to continue to develop my coding skills throughout a long career as a web developer.
+                    My name is William Grout. I've been a professional pizza cook for seven years with Fiore Pizza, but am currently transitioning into full stack web development. As I rose to leadership positions at Fiore, I was entrusted with teaching new employees the skills they needed to not only succeed but thrive in their roles.
                     <br />
                     <br />
-                    So far I've learned the basics of several front end and back end technologies, and I'm looking to bring that knowledge to bear on professional projects.
+                    Recently, I am a graduate of the University of Utah's Coding Bootcamp, where I have gained both front and backend web development skills. I've recently gained the hard skills necessary to enter the workplace as a full stack developer, but I've been cultivating the soft skills necessary to integrate into a team for years.
                 </p>
             </div>
         </div>
