@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import PortfolioPiece from "../PortfolioPiece";
+import projects from "../PortfolioPiece/projects";
 
 function Portfolio() {
     useEffect(() => {
@@ -19,62 +21,14 @@ function Portfolio() {
         <div id="portfolio" className="transition container flex-row" style={{ transform: 'translateY(-100vh)' }}>
             <div className="col-10 container flex-row">
                 <div className="col-12 col-md-6 p-3">
-                    <article className="bg-primary p-3 m-3 rounded-corners">
-                        <a href="https://dawnwogerman.github.io/6degreesofkevinbacon/" target="_blank" rel="noreferrer">
-                            <img src="./assets/images/6_degrees.png" alt="6 Degrees of Kevin Bacon website preview" id="6-degrees" />
-                            <label for="6-degrees" className="rounded-corners dynamic-text">
-                                6 Degrees of Kevin Bacon<br />
-                                <span>HTML, CSS, Javascript, Jquery, Bulma, and server-side API's</span>
-                            </label>
-                        </a>
-                    </article>
-                    <article className="bg-primary p-3 m-3 rounded-corners">
-                        <a href="https://worldwidejerky.herokuapp.com/" target="_blank" rel="noreferrer">
-                            <img src="./assets/images/worldwidejerky.herokuapp.com_.png" alt="World Wide Jerky website preview" id="worldWideJerky" />
-                            <label for="worldWideJerky" className="rounded-corners dynamic-text">
-                                World Wide Jerky<br />
-                                <span>MERN Stack, Apollo, GraphQL</span>
-                            </label>
-                        </a>
-                    </article>
-                    <article className="bg-primary p-3 m-3 rounded-corners">
-                        <a href="https://wgrout87.github.io/Code-Quiz/" target="_blank" rel="noreferrer">
-                            <img src="./assets/images/code-quiz-mobile.png" alt="Code Quiz website preview" id="code-quiz" />
-                            <label for="code-quiz" className="rounded-corners dynamic-text">
-                                Code Quiz<br />
-                                <span>HTML, CSS, Javascript</span>
-                            </label>
-                        </a>
-                    </article>
+                    {projects.slice(0, 3).map((element) => {
+                        return <PortfolioPiece key={element.id} element={element} />
+                    })}
                 </div>
                 <div className="col-12 col-md-6 p-3">
-                    <article className="bg-primary p-3 m-3 rounded-corners">
-                        <a href="https://herooutline.herokuapp.com/" target="_blank" rel="noreferrer">
-                            <img src="./assets/images/herooutline.herokuapp.com_.png" alt="A Hero's Outline website preview" id="herosOutline" />
-                            <label for="herosOutline" className="rounded-corners dynamic-text">
-                                A Hero's Outline<br />
-                                <span>HTML, CSS, Javascript, Bootstrap, Sequelize, Express, Node.js, Handlebars</span>
-                            </label>
-                        </a>
-                    </article>
-                    <article className="bg-primary p-3 m-3 rounded-corners">
-                        <a href="https://fathomless-springs-34063.herokuapp.com/" target="_blank" rel="noreferrer">
-                            <img src="./assets/images/budget_tracker.png" alt="Budget Tracker github preview" id="budgetTracker" />
-                            <label for="budgetTracker" className="rounded-corners dynamic-text">
-                                Budget Tracker<br />
-                                <span>PWA, MongoDB, IndexedDB</span>
-                            </label>
-                        </a>
-                    </article>
-                    <article className="bg-primary p-3 m-3 rounded-corners">
-                        <a href="https://evening-river-75441.herokuapp.com/" target="_blank" rel="noreferrer">
-                            <img src="./assets/images/savedBooks.png" alt="Book Search website preview" id="book-search" />
-                            <label for="book-search" className="rounded-corners dynamic-text">
-                                Book Search<br />
-                                <span>GraphQL, Apollo Server</span>
-                            </label>
-                        </a>
-                    </article>
+                    {projects.slice(3).map((element) => {
+                        return <PortfolioPiece key={element.id} element={element} />
+                    })}
                 </div>
             </div>
         </div>
