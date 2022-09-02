@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import PortfolioPiece from "../PortfolioPiece";
 import projects from "../PortfolioPiece/projects";
 
 function Portfolio() {
+    const [currentProject, setCurrentProject] = useState(0);
+
     useEffect(() => {
         if (window.innerWidth <= 650) {
             document.body.style.backgroundPosition = '0% 16.67%';
@@ -20,15 +22,8 @@ function Portfolio() {
     return (
         <div id="portfolio" className="transition container flex-row" style={{ transform: 'translateY(-100vh)' }}>
             <div className="col-10 container flex-row">
-                <div className="col-12 col-md-6 p-3">
-                    {projects.slice(0, 3).map((element) => {
-                        return <PortfolioPiece key={element.id} element={element} />
-                    })}
-                </div>
-                <div className="col-12 col-md-6 p-3">
-                    {projects.slice(3).map((element) => {
-                        return <PortfolioPiece key={element.id} element={element} />
-                    })}
+                <div className="col-12 p-3">
+                    <PortfolioPiece key={currentProject.id} element={projects[currentProject]} setCurrentProject={setCurrentProject} currentProject={currentProject} />
                 </div>
             </div>
         </div>

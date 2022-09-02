@@ -53,7 +53,7 @@ function Contact() {
                             <label htmlFor="email">Email Address</label>
                             <input className="form-input col-12" type="email" name="email" required />
                             <label htmlFor="message">Message</label>
-                            <textarea rows='8' className="form-textarea col-12" type="text" name="message" required />
+                            <textarea rows='6' className="form-textarea col-12" type="text" name="message" required />
                             <button className="btn pill px-5 mx-auto" type="submit">Send Email</button>
                         </form>
                     </section>

@@ -118,12 +118,13 @@ p.about-me {
 
 #portfolio img {
     width: 100%;
-    max-height: 150px;
+    max-height: 50vh;
     object-fit: cover;
     object-position: 0% 0%;
 }
 
 #portfolio article {
+    color: var(--light);
     position: relative;
     text-align: center;
 }
@@ -136,7 +137,6 @@ p.about-me {
     transform: translate(-50%, -50%);
     text-align: center;
     background-color: var(--primary);
-    opacity: 0.8;
     font-size: 2.5vw;
 }
 
@@ -146,7 +146,7 @@ svg {
 }
 
 iframe {
-    height: 70vh;
+    height: 60vh;
     border: none;
     outline: none;
     display: block;
@@ -278,62 +278,6 @@ a {
     resize: none;
 }
 
-[type='radio']:checked,
-[type='radio']:not(:checked) {
-    position: absolute;
-    left: -9999px;
-}
-
-[type='radio']:checked+label,
-[type='radio']:not(:checked)+label {
-    position: relative;
-    padding-left: 25px;
-    cursor: pointer;
-    line-height: 20px;
-    display: inline-block;
-    color: var(--secondary);
-    margin-right: 0.2rem;
-}
-
-[type='radio']:checked+label:before,
-[type='radio']:not(:checked)+label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 18px;
-    height: 18px;
-    border: 2px solid var(--secondary);
-    border-radius: 100%;
-    background: #fff;
-}
-
-[type='radio']:checked+label:after,
-[type='radio']:not(:checked)+label:after {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background-color: var(--secondary);
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    border-radius: 100%;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-
-[type='radio']:not(:checked)+label:after {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-}
-
-[type='radio']:checked+label:after {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-
 .switch {
     position: relative;
     display: inline-block;
@@ -349,7 +293,6 @@ a {
 
 .slider {
     position: absolute;
-    cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
@@ -1103,6 +1046,10 @@ input:checked+.slider:before {
     opacity: 1;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 @media screen and (min-width: 395px) {
     body {
         background-image: url('../public/assets/images/sky-day-medium.png');
@@ -1282,7 +1229,6 @@ input:checked+.slider:before {
 
     #portfolio label {
         font-size: 1.5vw;
-        cursor: pointer;
     }
 
     h2 {

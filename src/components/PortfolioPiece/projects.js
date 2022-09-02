@@ -5,7 +5,15 @@ var projects = [
         url: "https://dawnwogerman.github.io/6degreesofkevinbacon/",
         github: "https://github.com/DawnWogerman/6degreesofkevinbacon",
         img: "./assets/images/6_degrees.png",
-        technologies: "HTML, CSS, Javascript, Jquery, Bulma, and server-side API's"
+        technologies: "HTML, CSS, Javascript, Jquery, Bulma, API"
+    },
+    {
+        title: "A Hero's Outline",
+        id: "herosOutline",
+        url: "https://herooutline.herokuapp.com/",
+        github: "https://github.com/mjzabriskie/a-heros-outline",
+        img: "./assets/images/herooutline.herokuapp.com_.png",
+        technologies: "HTML, CSS, Javascript, Bootstrap, Sequelize, Express, Node.js, Handlebars"
     },
     {
         title: "World Wide Jerky",
@@ -22,14 +30,6 @@ var projects = [
         github: "https://github.com/wgrout87/Code-Quiz",
         img: "./assets/images/code-quiz-mobile.png",
         technologies: "HTML, CSS, Javascript"
-    },
-    {
-        title: "A Hero's Outline",
-        id: "herosOutline",
-        url: "https://herooutline.herokuapp.com/",
-        github: "https://github.com/mjzabriskie/a-heros-outline",
-        img: "./assets/images/herooutline.herokuapp.com_.png",
-        technologies: "HTML, CSS, Javascript, Bootstrap, Sequelize, Express, Node.js, Handlebars"
     },
     {
         title: "Budget Tracker",

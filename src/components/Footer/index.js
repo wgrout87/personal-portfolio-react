@@ -29,7 +29,7 @@ function Footer() {
                 <label htmlFor="toggleNightMode" className="ml-3">Night Mode:</label>
                 <label className="switch">
                     <input type="checkbox" name="toggleNightMode" id="toggleNightMode" onChange={toggleNightMode} />
-                    <span className="slider round"></span>
+                    <span className="slider round pointer"></span>
                 </label>
             </div>
         </footer>
