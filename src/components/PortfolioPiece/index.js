@@ -1,22 +1,26 @@
 import React from "react";
+import projects from "./projects";
 
-function PortfolioPiece({ element, setCurrentProject, currentProject }) {
+function PortfolioPiece({ project, setCurrentProject, currentProject }) {
     return (
         <article className="bg-primary p-3 m-3 rounded-corners">
-            <a href={element.url} target="_blank" rel="noreferrer">
-                <img src={element.img} alt={`${element.title} website preview`} id={element.id} />
-                <label htmlFor={element.id} className="rounded-corners dynamic-text pointer">
-                    {element.title}<br />
-                    <span>{element.technologies}</span>
+            <a href={project.url} target="_blank" rel="noreferrer">
+                <img src={project.img} alt={`${project.title} website preview`} id={project.id} />
+                <label htmlFor={project.id} className="rounded-corners dynamic-text pointer">
+                    <span className="border-bottom">{project.title}</span>
+                    <br /><br />
+                    <span className="border-bottom">Summary:</span><br />{project.summary}
+                    <br /><br />
+                    <span className="border-bottom">Technologies:</span><br />{project.technologies}
                 </label>
             </a>
-            <div className="flex-row justify-space-between">
+            <div className="flex-row justify-space-between mt-2">
                 <span className="pointer" onClick={() => {
-                    setCurrentProject(Math.max(currentProject - 1, 0))
+                    currentProject === 0 ? setCurrentProject(projects.length - 1) : setCurrentProject(currentProject - 1);
                 }}>{'<'}</span>
-                <a className="dynamic-text" href={element.github} target="_blank" rel="noreferrer">GitHub Repo</a>
+                <a className="dynamic-text" href={project.github} target="_blank" rel="noreferrer">GitHub Repo</a>
                 <span className="pointer" onClick={() => {
-                    setCurrentProject(Math.min(currentProject + 1, 5))
+                    currentProject === projects.length - 1 ? setCurrentProject(0) : setCurrentProject(currentProject + 1);
                 }}>{'>'}</span>
             </div>
         </article>

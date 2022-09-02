@@ -23,7 +23,7 @@ function Portfolio() {
         <div id="portfolio" className="transition container flex-row" style={{ transform: 'translateY(-100vh)' }}>
             <div className="col-10 container flex-row">
                 <div className="col-12 p-3">
-                    <PortfolioPiece key={currentProject.id} element={projects[currentProject]} setCurrentProject={setCurrentProject} currentProject={currentProject} />
+                    <PortfolioPiece key={currentProject.id} project={projects[currentProject]} setCurrentProject={setCurrentProject} currentProject={currentProject} />
                 </div>
             </div>
         </div>
