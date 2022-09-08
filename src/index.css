@@ -38,6 +38,8 @@ body {
     font-size: 20px;
     color: var(--light);
     background-image: url('../public/assets/images/sky-day-mobile.png');
+    image-rendering: pixelated;
+
 }
 
 .clouds {
