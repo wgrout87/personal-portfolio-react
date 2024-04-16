@@ -19,9 +19,9 @@ function Resume() {
         <div id="resume" className="transition container flex-row mb-4" style={{ transform: 'translateY(-100vh)' }}>
             <div className="col-sm-12 col-xl-6 p-3"></div>
             <div className="col-sm-12 col-xl-6 p-3 bg-primary rounded-corners">
-                <iframe className="rounded-corners" src="https://docs.google.com/document/d/e/2PACX-1vSOglPP5YOYdv7YC3Qb49pT7mTR56d_7oc-RqDDLxCA6iQ-Xk1m3isRjwQDJE90RGMf65TLr1VxJi_U/pub?embedded=true" title="resume" height='100%' width='100%'></iframe>
+                <iframe className="rounded-corners" src="https://docs.google.com/document/d/e/2PACX-1vSBY415PnIYC1JegAFIP9M8_XlWafJJ-ZZ2J2R92JDYkououpmEm-up7K-Qx9oM5i_-Uq_r5Y5NN5Ky/pub?embedded=true" title="resume" height='100%' width='100%'></iframe>
                 <div className="w-100 flex-row">
-                    <a className='btn pill px-5 mx-auto' href="https://docs.google.com/document/d/e/2PACX-1vSOglPP5YOYdv7YC3Qb49pT7mTR56d_7oc-RqDDLxCA6iQ-Xk1m3isRjwQDJE90RGMf65TLr1VxJi_U/pub" target="_blank" rel="noreferrer">View on Google Drive</a>
+                    <a className='btn pill px-5 mx-auto' href="https://docs.google.com/document/d/e/2PACX-1vSBY415PnIYC1JegAFIP9M8_XlWafJJ-ZZ2J2R92JDYkououpmEm-up7K-Qx9oM5i_-Uq_r5Y5NN5Ky/pub" target="_blank" rel="noreferrer">View on Google Drive</a>
                 </div>
             </div>
         </div>
