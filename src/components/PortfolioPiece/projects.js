@@ -29,11 +29,11 @@ var projects = [
     {
         title: "Code Quiz",
         id: "codeQuiz",
-        url: "https://wgrout87.github.io/Code-Quiz/",
-        github: "https://github.com/wgrout87/Code-Quiz",
+        url: "https://code-quiz-d2d40.firebaseapp.com/",
+        github: "https://github.com/wgrout87/code-quiz-react",
         img: "./assets/images/code-quiz-mobile.png",
         summary: "A timed quiz with questions related to web development",
-        technologies: "HTML, CSS, Javascript"
+        technologies: "HTML, CSS, Javascript, React"
     },
     {
         title: "Budget Tracker",
